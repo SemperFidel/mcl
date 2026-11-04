@@ -1,0 +1,14 @@
+[versions]
+kotlin = "2.4.20"
+antlr = "1.0.14"
+io = "0.9.1"
+coroutines  = "1.11.0"
+
+[libraries]
+kotlinx-io = {module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "io"}
+coroutines-core = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
+antlr-runtime = {module = "com.strumenta:antlr-kotlin-runtime", version.ref = "antlr"}
+
+[plugins]
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+antlr-plugin = {id = "com.strumenta.antlr-kotlin", version.ref = "antlr"}
